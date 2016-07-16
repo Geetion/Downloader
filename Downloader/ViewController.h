@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DownloadTask.h"
 
-@interface ViewController : NSViewController<NSURLSessionDownloadDelegate,NSOpenSavePanelDelegate>
+@interface ViewController : NSViewController<NSTableViewDataSource>
 @property(nonatomic,copy)NSString* mUrl;
 @property (weak) IBOutlet NSTextField *urlTextField;
 @property (weak) IBOutlet NSTextField *fileSizeLable;
