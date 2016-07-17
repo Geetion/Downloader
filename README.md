@@ -6,7 +6,6 @@ XCode 7.1+
 ##Remaining issues and the next job
 Supports magnet links download   
 Supports BT download
-Supports multiple tasks at the same time to download
 ##How to use it
 1.Clone or download this project from github  
 2.Install xcode and select this project in your finder
