@@ -19,12 +19,13 @@
     NSString *mfileSizeText;
 }
 
-- (instancetype)initWithUrl:(NSString*)downloadUrl
+- (instancetype)initWithUrl:(NSString*)downloadUrl cell:(TableViewCell *)cell
 {
     self = [super init];
     if (self) {
         mdownloadUrl = downloadUrl;
         isDownloading = false;
+        self.cell = cell;
         [self selectSavePath];
     }
     return self;
@@ -38,7 +39,6 @@
         if (result == NSFileHandlingPanelOKButton){
             msavePath = savePanel.directoryURL.path;
             mfileName = savePanel.nameFieldStringValue;
-            NSLog(mfileName);
             [self DownloadRequest];
         }
     }];
@@ -61,12 +61,12 @@
     
 }
 
-//-(void)setInterfaceInfo:(NSString *)currentSpead remainText:(NSString *)remainText
-//       downloadProgress:(double)downloadProgress{
-//    self.currentSpead.stringValue = currentSpead;
-//    self.remainData.stringValue = remainText;
-//    [self.downloadProgress setDoubleValue:downloadProgress];
-//}
+-(void)setInterfaceInfo:(NSString *)currentSpead remainText:(NSString *)remainText
+       downloadProgress:(double)downloadProgress{
+    self.cell.downloadSpeed.stringValue = currentSpead;
+    //mcell.remainData.stringValue = remainText;
+    [self.cell.downloadProgress setDoubleValue:downloadProgress];
+}
 
 #pragma NSURLSessionDownload Delegate
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
@@ -116,8 +116,8 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;{
     
     //    更新界面信息
     dispatch_async(dispatch_get_main_queue(), ^{
-//        [self setInterfaceInfo:currentSpeadText remainText:remainText
-//              downloadProgress:currentDownloadProgress];
+        [self setInterfaceInfo:currentSpeadText remainText:remainText
+              downloadProgress:currentDownloadProgress];
     });
 }
 @end

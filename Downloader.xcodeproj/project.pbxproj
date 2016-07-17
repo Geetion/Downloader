@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C0A398651D3A4DCB00B850BC /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A398641D3A4DCB00B850BC /* DownloadTask.m */; };
+		C0E84DBF1D3AF8C7004D36F3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E84DBE1D3AF8C7004D36F3 /* TableViewCell.m */; };
+		C0E84DC11D3AF8DC004D36F3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E84DC01D3AF8DC004D36F3 /* TableViewCell.xib */; };
+		C0E84DC41D3B8643004D36F3 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E84DC31D3B8643004D36F3 /* Tasks.m */; };
 		C0ECB24D1CB642F800A1006E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ECB24C1CB642F800A1006E /* AppDelegate.m */; };
 		C0ECB2501CB642F800A1006E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ECB24F1CB642F800A1006E /* main.m */; };
 		C0ECB2531CB642F800A1006E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ECB2521CB642F800A1006E /* ViewController.m */; };
@@ -37,6 +40,11 @@
 /* Begin PBXFileReference section */
 		C0A398631D3A4DCB00B850BC /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTask.h; sourceTree = "<group>"; };
 		C0A398641D3A4DCB00B850BC /* DownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTask.m; sourceTree = "<group>"; };
+		C0E84DBD1D3AF8C7004D36F3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		C0E84DBE1D3AF8C7004D36F3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		C0E84DC01D3AF8DC004D36F3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		C0E84DC21D3B8643004D36F3 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		C0E84DC31D3B8643004D36F3 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		C0ECB2481CB642F800A1006E /* Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ECB24B1CB642F800A1006E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0ECB24C1CB642F800A1006E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +116,11 @@
 				C0ECB2521CB642F800A1006E /* ViewController.m */,
 				C0A398631D3A4DCB00B850BC /* DownloadTask.h */,
 				C0A398641D3A4DCB00B850BC /* DownloadTask.m */,
+				C0E84DC21D3B8643004D36F3 /* Tasks.h */,
+				C0E84DC31D3B8643004D36F3 /* Tasks.m */,
+				C0E84DBD1D3AF8C7004D36F3 /* TableViewCell.h */,
+				C0E84DBE1D3AF8C7004D36F3 /* TableViewCell.m */,
+				C0E84DC01D3AF8DC004D36F3 /* TableViewCell.xib */,
 				C0ECB2541CB642F900A1006E /* Assets.xcassets */,
 				C0ECB2561CB642F900A1006E /* Main.storyboard */,
 				C0ECB2591CB642F900A1006E /* Info.plist */,
@@ -246,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0ECB2551CB642F900A1006E /* Assets.xcassets in Resources */,
+				C0E84DC11D3AF8DC004D36F3 /* TableViewCell.xib in Resources */,
 				C0ECB2581CB642F900A1006E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E84DC41D3B8643004D36F3 /* Tasks.m in Sources */,
 				C0ECB2531CB642F800A1006E /* ViewController.m in Sources */,
 				C0A398651D3A4DCB00B850BC /* DownloadTask.m in Sources */,
 				C0ECB2501CB642F800A1006E /* main.m in Sources */,
+				C0E84DBF1D3AF8C7004D36F3 /* TableViewCell.m in Sources */,
 				C0ECB24D1CB642F800A1006E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

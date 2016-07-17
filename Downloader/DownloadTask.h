@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "TableViewCell.h"
 
 @interface DownloadTask : NSObject<NSURLSessionDownloadDelegate,NSOpenSavePanelDelegate>
-- (instancetype)initWithUrl:(NSString*)downloadUrl;
+@property(strong,nonatomic) TableViewCell *cell;
+
+- (instancetype)initWithUrl:(NSString*)downloadUrl cell:(TableViewCell *)cell;
 @end
