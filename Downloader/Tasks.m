@@ -13,14 +13,14 @@
 - (id)init
 {
     if (self) {
-        self.list = [[NSMutableArray alloc] init];
+        self = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
-+(Tasks*)sharedTasks{
++(NSMutableArray*)sharedTasks{
     static dispatch_once_t pred = 0;
-    __strong static id _sharedObject = nil;
+    __strong static id _sharedObject;
     dispatch_once(&pred, ^{
         _sharedObject = [[self alloc] init];
     });

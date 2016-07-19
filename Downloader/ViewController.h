@@ -14,11 +14,7 @@
 @interface ViewController : NSViewController<NSTableViewDataSource,NSTableViewDelegate>
 @property(nonatomic,copy)NSString* mUrl;
 @property (weak) IBOutlet NSTextField *urlTextField;
-@property (weak) IBOutlet NSTextField *fileSizeLable;
-@property (weak) IBOutlet NSTextField *currentSpead;
-@property (weak) IBOutlet NSTextField *remainData;
 @property (weak) IBOutlet NSTableView *tableView;
-//@property(atomic,weak);
 
 @end
 

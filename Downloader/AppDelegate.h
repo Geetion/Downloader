@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Tasks.h"
+#import "DownloadTask.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

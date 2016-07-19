@@ -8,8 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Tasks : NSObject
-@property(strong,nonatomic) NSMutableArray *list;
+@interface Tasks : NSMutableArray
 
-+(Tasks*)sharedTasks;
++(NSMutableArray*)sharedTasks;
 @end
